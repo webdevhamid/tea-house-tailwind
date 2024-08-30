@@ -3,6 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome CDN  -->
     <script src="https://kit.fontawesome.com/4372b2ed2a.js" crossorigin="anonymous"></script>
     <!-- Tailwind CDN -->
@@ -18,12 +25,15 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              manrope: ["Manrope", "system-ui"],
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <!-- Header Section -->
     <!-- px-16 lg:px-28 -->
     <header class="max-w-6xl mx-auto md:flex justify-between items-center mt-10 mb-20 g:px-0 px-5">
@@ -288,5 +298,96 @@
         </div>
       </section>
     </main>
+
+    <!-- footer section -->
+    <footer class="bg-gradient-to-r from-[#ff00002c] to-[#ff88381c] py-8 lg:pt-20">
+      <div class="max-w-6xl mx-auto px-16">
+        <section class="py-6">
+          <div class="flex justify-between items-center">
+            <div class="">
+              <img src="images/cup.png" alt="" />
+            </div>
+            <div class="flex gap-3 items-center">
+              <p class="text-gray-500 text-xl font-medium">Ready to get started?</p>
+              <button
+                class="bg-gradient-to-r from-orange-500 to-red-500 text-white py-3 px-6 rounded-xl font-semibold hover:from-orange-600 hover:to-red-600"
+              >
+                Get Started
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- links  -->
+        <section class="my-10">
+          <div
+            class="grid md:grid-cols-2 grid-cols-1 gap-8 lg:gap-0 lg:grid-cols-4 justify-between"
+          >
+            <div>
+              <h3 class="font-bold mb-5">Quick Links</h3>
+              <ul class="text-gray-500 font-medium flex flex-col gap-2">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Insurance</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-5">Our Services</h3>
+              <ul class="text-gray-500 font-medium flex flex-col gap-2">
+                <li><a href="#">Life Insurance</a></li>
+                <li><a href="#">Car Insurance</a></li>
+                <li><a href="#">Health Insurance</a></li>
+                <li><a href="#">House Insurance</a></li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="font-bold mb-5">Help</h3>
+              <ul class="text-gray-500 font-medium flex flex-col gap-2">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="flex flex-col gap-5">
+              <h2 class="font-bold text-2xl">
+                Subscribe to our <br />
+                newsletter
+              </h2>
+              <div class="flex items-center justify-between">
+                <input
+                  type="email"
+                  placeholder="Email Address"
+                  class="w-11/12 bg-transparent border border-x-0 border-t-0 border-black py-3 outline-none placeholder:text-gray-600"
+                />
+                <i
+                  class="fa-solid fa-arrow-right p-3 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full cursor-pointer ml-3"
+                ></i>
+              </div>
+              <div>
+                <ul class="flex gap-4 text-xl">
+                  <li>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- copyright  -->
+        <section class="pt-10">
+          <p class="text-center text-gray-500">© 2027 UIDesign.to - All rights reserved.</p>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
